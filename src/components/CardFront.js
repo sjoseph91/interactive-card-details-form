@@ -13,7 +13,7 @@ const CardFront = ({ name, number, month, year }) => {
     <div className="card front">
       <img alt="logo" src={logoImage}></img>
       <div className="card-number-value">
-        {addSpaces(number) || "000000000000"}
+        {addSpaces(number) || "0000 0000 0000 0000"}
       </div>
       <div className="card-data">
         <p>{name || "Jane Appleseed"}</p>

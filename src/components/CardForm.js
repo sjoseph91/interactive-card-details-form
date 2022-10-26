@@ -90,6 +90,7 @@ const CardForm = ({
           return prevErrors;
         }
       }
+      //changing parent state data before child component unmounts
       setTimeout(() => {
         setValidSubmit(true);
       }, 500);

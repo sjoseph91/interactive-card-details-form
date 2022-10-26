@@ -102,6 +102,11 @@ input {
   border-radius: 5px;
   font-family: inherit;
   letter-spacing: 1px;
+  cursor: pointer;
+}
+
+input:focus {
+  outline-color: hsl(249, 99%, 64%);
 }
 input[name="name"],
 input[name="number"] {
@@ -137,13 +142,21 @@ button {
   margin-top: 25px;
   width: 100%;
   color: white;
-  background-color: black;
+  background-color: hsl(278, 68%, 11%);
   text-align: center;
   line-height: 100%;
   padding: 15px;
   border-radius: 5px;
   font-size: 1.1rem;
   margin-bottom: 15px;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.95);
+}
+button:hover {
+  opacity: 0.9;
+  border-width: 2px;
 }
 
 /* Complete Section */
