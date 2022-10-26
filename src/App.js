@@ -19,25 +19,26 @@ function App() {
 
   return (
     <div className="App">
-      <div className="design">
-        <CardBack cvc={formData.cvc} />
-        <CardFront {...formData} />
+      <div className="flex">
+        <div className="design">
+          <CardBack cvc={formData.cvc} />
+          <CardFront {...formData} />
+        </div>
+        <div className="container">
+          {!validSubmit ? (
+            <CardForm
+              {...formData}
+              setFormData={setFormData}
+              setValidSubmit={setValidSubmit}
+            />
+          ) : (
+            <CompletePage
+              setFormData={setFormData}
+              setValidSubmit={setValidSubmit}
+            />
+          )}
+        </div>
       </div>
-      <div className="container">
-        {!validSubmit ? (
-          <CardForm
-            {...formData}
-            setFormData={setFormData}
-            setValidSubmit={setValidSubmit}
-          />
-        ) : (
-          <CompletePage
-            setFormData={setFormData}
-            setValidSubmit={setValidSubmit}
-          />
-        )}
-      </div>
-
       <Footer />
     </div>
   );
