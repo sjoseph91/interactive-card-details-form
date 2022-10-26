@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/sjoseph91/interactive-card-details-form]
-- Live Site URL: [Add live site URL here]
+- Live Site URL: [https://sjoseph91.github.io/interactive-card-details-form/]
 
 ### Built with
 
@@ -46,11 +46,10 @@ Users should be able to:
 
 ### What I learned
 
-Client-side form validation
-Error-handling
+- Client-side form validation
+- Error-handling
 
 ## Author
 
 - Website - [Sean Joseph](https://github.com/sjoseph91)
 - Frontend Mentor - [@sjoseph91](https://www.frontendmentor.io/profile/sjoseph91)
-
